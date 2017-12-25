@@ -2,7 +2,13 @@ $(document).ready(function(){
     $('#myTable').DataTable();
 });
 
-var tableTemplate = '<table id="myTable" class="table" cellspacing="0" width="100%"><thead><tr><th>Number</th><th>Status</th><th>StatusCode</th></tr></thead><tbody></tbody></table>';
+var tableTemplate = '<table id="myTable" class="table" cellspacing="0" width="100%"><thead><tr>'
+    + '<th>Number</th>'
+    + '<th>Status</th>'
+    + '<th>StatusCode</th>'
+    + '<th>Weight(kg)</th>'
+    + '<th>Cost</th>'
+    + '</tr></thead><tbody></tbody></table>';
 function sendAjax(documents) {
     $.ajax({
         url: 'https://api.novaposhta.ua/v2.0/json/',
@@ -33,9 +39,29 @@ function sendAjax(documents) {
                     rowClass = 'soon'
                 }
                 if (rowClass) {
-                    string += '<tr class="'+ rowClass +'"><td>' + data.data[i].Number + '</td><td>' + data.data[i].Status + '</td><td>' + data.data[i].StatusCode + '</td></tr>'
+                    string += '<tr class="'+ rowClass +'"><td>'
+                        + data.data[i].Number
+                        + '</td><td>'
+                        + data.data[i].Status
+                        + '</td><td>'
+                        + data.data[i].StatusCode
+                        + '</td><td>'
+                        + data.data[i].DocumentWeight
+                        + '</td><td>'
+                        + data.data[i].DocumentCost
+                        + '</td></tr>'
                 } else {
-                    string += '<tr><td>' + data.data[i].Number + '</td><td>' + data.data[i].Status + '</td><td>' + data.data[i].StatusCode + '</td></tr>'
+                    string += '<tr><td>'
+                        + data.data[i].Number
+                        + '</td><td>'
+                        + data.data[i].Status
+                        + '</td><td>'
+                        + data.data[i].StatusCode
+                        + '</td><td>'
+                        + data.data[i].DocumentWeight
+                        + '</td><td>'
+                        + data.data[i].DocumentCost
+                        + '</td></tr>'
                 }
             }
             $('tbody').append(string);

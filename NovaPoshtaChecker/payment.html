@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NovaPoshtaChecker</title>
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="libs/datatables.css">
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="libs/jquery.timepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap-datepicker.min.css">
+
+    <link rel="stylesheet" type="text/css" href="app.css">
+</head>
+<body>
+<div class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="appLabel">
+                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span><span class="appLabelText">Nova Poshta Checker</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div id="tableWrapper">
+        <table id="myTable" class="table" cellspacing="0" width="100%">
+            <thead>
+            <tr>
+                <th>Number</th>
+                <th>Status</th>
+                <th>StatusCode</th>
+                <th>DatePayedKeeping</th>
+                <th>OrderId</th>
+                <th>Cost</th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <button id="checkBtn" type="button" class="btn btn-primary">Check</button>
+    <button id="clearBtn" type="button" class="btn btn-warning">Clear</button>
+    <div class="options">
+        <div id="datepickerPair" class="row">
+            <div class="col-sm-6">
+                <label for="datepickerFrom">From</label>
+                <input type="text" class="form-control date start" id="datepickerFrom">
+            </div>
+            <div class="col-sm-6">
+                <label for="datepickerTo">To</label>
+                <input type="text" class="form-control date end" id="datepickerTo">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <label for="apiKey">Api Key</label>
+                <input type="text" class="form-control" id="apiKey">
+            </div>
+            <div class="col-sm-6">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="text" class="form-control" id="phoneNumber">
+            </div>
+        </div>
+    </div>
+</div>
+<script src="libs/jquery-3.2.1.js"></script>
+<script src="libs/bootstrap.min.js"></script>
+<script src="libs/datatables.js"></script>
+<script src="libs/jquery.timepicker.min.js"></script>
+<script src="libs/bootstrap-datepicker.min.js"></script>
+<script src="libs/Datepair.js"></script>
+<script src="libs/jquery.datepair.js"></script>
+<script src="payment.js"></script>
+</body>
+</html>
