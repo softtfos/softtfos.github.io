@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/app.css">
 </head>
 <body>
+
 <nav class="navbar navbar-default">
     <div class="container">
         <div class="container-fluid">
@@ -36,8 +37,7 @@
                 <th>Number</th>
                 <th>Status</th>
                 <th>StatusCode</th>
-                <th>DatePayedKeeping</th>
-                <th>OrderId</th>
+                <th>Weight(kg)</th>
                 <th>Cost</th>
             </tr>
             </thead>
@@ -45,22 +45,11 @@
             </tbody>
         </table>
     </div>
+    <textarea id="info"></textarea>
     <button id="checkBtn" type="button" class="btn btn-primary">Check</button>
-    <button id="clearBtn" type="button" class="btn btn-warning">Clear</button>
-    <div class="options">
-        <div id="datepickerPair" class="row">
-            <div class="col-sm-6">
-                <label for="datepickerFrom">From</label>
-                <input type="text" class="form-control date start" id="datepickerFrom">
-            </div>
-            <div class="col-sm-6">
-                <label for="datepickerTo">To</label>
-                <input type="text" class="form-control date end" id="datepickerTo">
-            </div>
-        </div>
-    </div>
+    <button id="testBtn" type="button" class="btn btn-primary">TEST</button>
 </div>
 <script src="js/vendor.min.js"></script>
-<script src="js/payment.min.js"></script>
+<script src="js/app.min.js"></script>
 </body>
 </html>

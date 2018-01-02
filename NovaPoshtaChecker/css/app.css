@@ -1,0 +1,70 @@
+.header {
+    height: inherit;
+    width: 100%;
+    background-color: #337AB4;
+}
+.navbar-default {
+    background-color: #337AB4;
+}
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
+.navbar-default .navbar-brand {
+    color: white
+}
+
+.menu-active {
+    background-color: #e7e7e7;
+}
+
+.menu-active>a {
+    color: #777 !important;
+}
+
+.button-block {
+    margin-top: 10px;
+}
+
+.navbar-default .navbar-nav li:hover {
+    background-color: #e7e7e7;
+}
+.container {
+    height: 50px;
+}
+#info {
+    width: 100%;
+}
+#tableWrapper {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.appLabel {
+    color: white;
+    margin-top: 10px;
+}
+.appLabelText {
+    font-size: 16px;
+}
+.navbar-header .glyphicon-search {
+    font-size: 26px;
+    margin-right: 10px;
+}
+.wait {
+    background-color: #77ff85;
+}
+.done {
+    background-color: #c6c6c6;
+}
+.soon {
+    background-color: #fffc7c;
+}
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+    color: white;
+}
+
+/*For widgets*/
+.hero-widget { text-align: center; padding-top: 20px; padding-bottom: 20px; }
+.hero-widget .icon { display: block; font-size: 78px; line-height: 96px; text-align: center; }
+.hero-widget var { display: block; height: 64px; font-size: 64px; line-height: 64px; font-style: normal; }
+.hero-widget label { font-size: 17px; }
+.hero-widget .options { margin-top: 10px; }

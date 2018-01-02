@@ -3,48 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <title>NovaPoshtaChecker</title>
-    <link rel="stylesheet" type="text/css" href="libs/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="libs/datatables.css">
-    <link rel="stylesheet" type="text/css" href="libs/bootstrap-theme.min.css">
-
-    <link rel="stylesheet" type="text/css" href="app.css">
+    <link rel="stylesheet" type="text/css" href="css/vendor.min.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
 </head>
 <body>
-<div class="header">
+
+<nav class="navbar navbar-default">
     <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="appLabel">
-                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span><span class="appLabelText">Nova Poshta Checker</span>
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">
+                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    <span class="appLabelText">Nova Poshta Checker</span>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li id="menu-item-1"><a href="multi.html">Multi TTN</a></li>
+                    <li id="menu-item-2"><a href="payment.html">Pick Up</a></li>
+                    <li id="menu-item-3"><a href="#">Return</a></li>
+                    <li id="menu-item-4"><a href="options.html">Options</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="hero-widget well well-sm">
+                <div class="icon">
+                    <i class="glyphicon glyphicon-list"></i>
+                </div>
+                <div class="text">
+                    <label class="text-muted">Multi TTN</label>
+                </div>
+                <div class="options">
+                    <a href="multi.html" class="btn btn-default btn-lg"><i class="glyphicon glyphicon-search"></i> View</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="hero-widget well well-sm">
+                <div class="icon">
+                    <i class="glyphicon glyphicon-alert"></i>
+                </div>
+                <div class="text">
+                    <label class="text-muted">Pick Up</label>
+                </div>
+                <div class="options">
+                    <a href="payment.html" class="btn btn-default btn-lg"><i class="glyphicon glyphicon-search"></i> View</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="hero-widget well well-sm">
+                <div class="icon">
+                    <i class="glyphicon glyphicon-repeat"></i>
+                </div>
+                <div class="text">
+                    <label class="text-muted">Return</label>
+                </div>
+                <div class="options">
+                    <a href="#" class="btn btn-default btn-lg"><i class="glyphicon glyphicon-search"></i> View</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="hero-widget well well-sm">
+                <div class="icon">
+                    <i class="glyphicon glyphicon-cog"></i>
+                </div>
+                <div class="text">
+                    <label class="text-muted">Options</label>
+                </div>
+                <div class="options">
+                    <a href="#" class="btn btn-default btn-lg"><i class="glyphicon glyphicon-wrench"></i> Edit</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
-<div class="container">
-    <div id="tableWrapper">
-        <table id="myTable" class="table" cellspacing="0" width="100%">
-            <thead>
-            <tr>
-                <th>Number</th>
-                <th>Status</th>
-                <th>StatusCode</th>
-                <th>Weight(kg)</th>
-                <th>Cost</th>
-            </tr>
-            </thead>
-            <tbody>
-            </tbody>
-        </table>
-    </div>
-    <textarea id="info"></textarea>
-    <button id="checkBtn" type="button" class="btn btn-primary">Check</button>
-    <button id="testBtn" type="button" class="btn btn-primary">TEST</button>
-</div>
-<script src="libs/jquery-3.2.1.js"></script>
-<script src="libs/bootstrap.min.js"></script>
-<script src="libs/datatables.js"></script>
-<script src="app.js"></script>
+<script src="js/vendor.min.js"></script>
 </body>
 </html>
