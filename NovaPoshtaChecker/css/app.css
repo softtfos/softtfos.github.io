@@ -171,3 +171,7 @@
     text-align: left;
     /*transition-duration: 3s;*/
 }
+#commonCost {
+    font-size: 20px;
+    text-align: right;
+}
