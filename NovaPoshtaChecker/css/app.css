@@ -176,6 +176,11 @@
     text-align: right;
 }
 
+#statResult {
+    font-size: 20px;
+    text-align: center;
+}
+
 @media print {
     .noPrint {
         display: none !important;
